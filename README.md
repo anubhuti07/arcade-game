@@ -1,4 +1,4 @@
-# Frontend nanodegree: Arcade Game Clone
+# Arcade Game 
 
 ## How it works:
 
