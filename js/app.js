@@ -27,8 +27,7 @@ var GameEntity = function (sprite) {
 /*
 * @description: Render method is defined for superclass GameEntity. It draws the image on the canvas
                 using drawImage function of the canvas' context element that takes three parameters:
-                the image to be drawn, the x coordinate to start drawing and the y coordinate to start
-                drawing.
+                the image to be drawn and the x and y coordinate to start drawing.
 */
 GameEntity.prototype.render = function () {
     ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
@@ -43,7 +42,7 @@ GameEntity.prototype.render = function () {
 var Enemy = function () {
     /* .call() calls the constructor function of superclass
        GameEntity and sets all its properties for a new
-       instance of subclass Enemy is created
+       instance of subclass Enemy
       */
     GameEntity.call(this, 'images/enemy-bug.png');
     this.speed = 50;
