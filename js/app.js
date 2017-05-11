@@ -144,7 +144,6 @@ Player.prototype.handleInput = function (keyCode) {
         //game won
         reset();
         score += GAME_SCORE;
-
     }
 
     // player' y position is checked and is not allowed to move outside the canvas height
@@ -414,6 +413,7 @@ document.addEventListener('keyup', function (e) {
         39: 'right',
         40: 'down'
     };
+    
     // player obejct calls the handle input method
     player.handleInput(allowedKeys[e.keyCode]);
 });
