@@ -130,15 +130,8 @@ var Engine = (function(global) {
                  * we're using them over and over.
                  */
                 ctx.drawImage(Resources.get(rowImages[row]), col * COLUMN_WIDTH, row * ROW_HEIGHT);
-            // console.log("row no: ", row);
-            // console.log("column no: ", col);
-            // console.log("x position is: ", col * COLUMN_WIDTH);
-            // console.log("y position is: ", row * ROW_HEIGHT);
-
-
             }
         }
-
         renderEntities();
         renderScore();
     }
