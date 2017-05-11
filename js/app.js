@@ -118,10 +118,11 @@ Player.prototype.handleInput = function (keyCode) {
        In case of collision with the rock, doesnt allow the player to move in the
        same direction
     */
+    var self = this;
     allRocks.forEach(function (rock) {
-        if (isCollided(player, rock)) {
-            player.x = x;
-            player.y = y;
+        if (isCollided(self, rock)) {
+            self.x = x;
+            self.y = y;
             return;
         }
     });
@@ -277,8 +278,8 @@ var resetGems = function () {
             }
         }
         /*
-          In case of no collision increments to the next ith element in the allGems array to
-          be checked for collision with all the remaining elements in the allGems array.
+          In case of no collision the position of current element (ith) is correctly calculated.
+          Increment 'i' to calculate the position of next element in next iteration.
         */
         if (!collision) {
             i++;
