@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The game has a Player and Enemies (Bugs). The goal of the player is to reach the water collecting gems on the way, without colliding into any one of the enemies and circumventing the blocking rocks. The player can move left, right, up and down. The enemies move in varying speeds on the paved block portion of the scene. The player gains points each time he reaches the water or collects a gem and on colliding with an enemy the points are lost and the position is reset.
+This is an HTML 5 Canvas powered video game having a Player and Enemies (Bugs). The goal of the player is to reach the water collecting gems on the way, without colliding into any one of the enemies and circumventing the blocking rocks. The player can move left, right, up and down. The enemies move in varying speeds on the paved block portion of the scene. The player gains points each time he reaches the water or collects a gem and on colliding with an enemy the points are lost and the position is reset.
 
 ## How it works:
 
